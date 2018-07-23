@@ -9,9 +9,22 @@ module.exports = function (app) {
     });
 
     app.post("/api/friends", function (req, res) {
-       console.log( req.body.newFriend);
+        console.log("Posting to api/friends");
+       console.log( "req.body: ",req.body);
 
-        friend.push(req.body.newFriend);
+        friend.push(req.body);
+
+        // TODO: grade scores of other users and find best match
+
+        // go through every friend
+        for(var i in friends){
+
+            for(var j in friends.score){
+
+            }
+        }
+
+
     });
 
 }

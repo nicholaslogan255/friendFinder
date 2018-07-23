@@ -18,6 +18,7 @@ app.use(bodyParser.json());
 // imported routes and data from other files
 var apiRoute = require("./app/routing/apiRoutes.js")(app);
 var htmlRoute = require("./app/routing/htmlRoutes.js")(app);
+var htmlRoute = require("./app/routing/cssRoutes.js")(app);
 var friend = require("./app/data/friends.js")
 
 // Starts the server to begin listening
