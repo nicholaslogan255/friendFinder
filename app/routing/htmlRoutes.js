@@ -5,12 +5,13 @@ var path = require("path");
 module.exports = function (app) {
     
     app.get("/", function (req, res) {
-        console.log("Home")
+        console.log("Getting Home Page");
         res.sendFile(path.join(__dirname, "../public/home.html"));
     });
 
     app.get("/survey", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/servey.html"));
+        console.log("Getting servey Page");
+        res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
 }
 
