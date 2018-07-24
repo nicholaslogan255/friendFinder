@@ -3,3 +3,16 @@ label{
     font-weight: bold;
 
 }
+
+body{
+    background-image: url("/css/background");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container{
+    background-color: aliceblue;
+    opacity: .9;
+    padding-bottom: 5px;
+}
