@@ -271,7 +271,11 @@
                     if (isNaN($(quesTag).val())) {
                         console.log("Question " + i + " not answered");
                         $(".modal-body").append(`<h2> Question ${i} not answered </h2>`);
+                        $(quesTag).css("color", "red");
                         allAnswered = false;
+                    }
+                    else{
+                        $(quesTag).css("color", "black");
                     }
                 }
 
