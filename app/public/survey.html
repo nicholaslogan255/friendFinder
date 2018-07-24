@@ -70,9 +70,10 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q1">Your mind is always buzzing with unexplored ideas and plans. (1- Strongly Disagree | 5 -
+                                <label for="q1">1) Your mind is always buzzing with unexplored ideas and plans. (1- Strongly Disagree | 5 -
                                     Strongly Agree):</label>
                                 <select class="form-control" id="q1">
+                                    <option selected>Choose...</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -82,9 +83,10 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q2">Generally speaking, you rely more on your experience than your imagination. (1- Strongly
+                                <label for="q2">2) Generally speaking, you rely more on your experience than your imagination. (1- Strongly
                                     Disagree | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q2">
+                                    <option selected>Choose...</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -94,9 +96,10 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q3">You find it easy to stay relaxed and focused even when there is some pressure. (1- Strongly
+                                <label for="q3">3) You find it easy to stay relaxed and focused even when there is some pressure. (1- Strongly
                                     Disagree | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q3">
+                                    <option selected>Choose...</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -106,10 +109,11 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q4">You rarely do something just out of sheer curiosity. (1- Strongly Disagree | 5 - Strongly
+                                <label for="q4">4) You rarely do something just out of sheer curiosity. (1- Strongly Disagree | 5 - Strongly
                                     Agree):
                                 </label>
                                 <select class="form-control" id="q4">
+                                    <option selected>Choose...</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -119,8 +123,9 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q5">People can rarely upset you. (1- Strongly Disagree | 5 - Strongly Agree):</label>
+                                <label for="q5">5) People can rarely upset you. (1- Strongly Disagree | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q5">
+                                    <option selected>Choose...</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -130,9 +135,10 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q6">It is often difficult for you to relate to other people’s feelings. (1- Strongly Disagree
+                                <label for="q6">6) It is often difficult for you to relate to other people’s feelings. (1- Strongly Disagree
                                     | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q6">
+                                    <option selected>Choose...</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -142,9 +148,10 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q7">In a discussion, truth should be more important than people’s sensitivities. (1- Strongly
+                                <label for="q7">7) In a discussion, truth should be more important than people’s sensitivities. (1- Strongly
                                     Disagree | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q7">
+                                    <option selected>Choose...</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -155,10 +162,11 @@
 
 
                             <div class="form-group">
-                                <label for="q8">You rarely get carried away by fantasies and ideas. (1- Strongly Disagree | 5 - Strongly
+                                <label for="q8">8) You rarely get carried away by fantasies and ideas. (1- Strongly Disagree | 5 - Strongly
                                     Agree):
                                 </label>
                                 <select class="form-control" id="q8">
+                                    <option selected>Choose...</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -168,9 +176,10 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q9">You think that everyone’s views should be respected regardless of whether they are supported
+                                <label for="q9">9) You think that everyone’s views should be respected regardless of whether they are supported
                                     by facts or not. (1- Strongly Disagree | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q9">
+                                    <option selected>Choose...</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -180,9 +189,10 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q10">You feel more energetic after spending time with a group of people.(1- Strongly Disagree
+                                <label for="q10">10) You feel more energetic after spending time with a group of people.(1- Strongly Disagree
                                     | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q10">
+                                    <option selected>Choose...</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -205,7 +215,9 @@
                 <a href="api/friends">
                     <span class="fa fa-eye"></span>Api Friends</button>
                 </a>
-                <a href="/css/background"><span class="fa fa-eye"></span>CSS-Background</button></a>
+                <a href="/css/background">
+                    <span class="fa fa-eye"></span>CSS-Background</button>
+                </a>
                 <a href="https://nicholaslogan255.github.io/responsive-portfolio/">Profile</a>
 
             </div>
@@ -229,60 +241,90 @@
                 $(".modal-title").text("Error")
 
                 // tell user that name is empty
-                if($("#name").val().trim() == ""){
+                if ($("#name").val().trim() == "") {
                     $(".modal-body").append(`<h5>You need to enter your name!</h5>`);
                     $(".modal-body").append("<br>");
                 }
 
                 // tell user that name is empty
-                 if($("#image").val().trim() == ""){
+                if ($("#image").val().trim() == "") {
                     $(".modal-body").append(`<h5>You need to enter a valid image url!</h5>`);
                     $(".modal-body").append("<br>");
                 }
-               
-               
+
+
                 // show the modal
                 $("#myModal").modal();
             }
             else {
-                var newEntry = {
-                    name: $("#name").val().trim(),
-                    photo: $("#image").val().trim(),
-                    scores: [
-                        $("#q1").val(),
-                        $("#q2").val(),
-                        $("#q3").val(),
-                        $("#q4").val(),
-                        $("#q5").val(),
-                        $("#q6").val(),
-                        $("#q7").val(),
-                        $("#q8").val(),
-                        $("#q9").val(),
-                        $("#q10").val()
-                    ]
+
+                 // clear the contents of the modal
+                 $(".modal-body").empty();
+
+                //check if all questions have been answered
+                var allAnswered = true;
+
+                for (var i = 1; i <= 10; i++) {
+                    var quesTag = "#q" + i;
+                    console.log(quesTag);
+
+                    if (isNaN($(quesTag).val())) {
+                        console.log("Question " + i + " not answered");
+                        $(".modal-body").append(`<h2> Question ${i} not answered </h2>`);
+                        allAnswered = false;
+                    }
+                }
+
+                // if all the questions have been answered...
+                if (allAnswered) {
+
+                    // create new friend
+                    var newEntry = {
+                        name: $("#name").val().trim(),
+                        photo: $("#image").val().trim(),
+                        scores: [
+                            $("#q1").val(),
+                            $("#q2").val(),
+                            $("#q3").val(),
+                            $("#q4").val(),
+                            $("#q5").val(),
+                            $("#q6").val(),
+                            $("#q7").val(),
+                            $("#q8").val(),
+                            $("#q9").val(),
+                            $("#q10").val()
+                        ]
+                    }
+
+
+                    // posts the new entry to the api/friends
+                    $.post("/api/friends", newEntry)
+                        .then(function (data) {
+                            console.log("data: ", data);
+
+                            // add the name and image of your match
+                            $(".modal-title").text("We found a match!")
+                            $(".modal-body").append(`<h2>${data.name}</h2>`);
+                            $(".modal-body").append("<br>");
+                            $(".modal-body").append(`<img src="${data.photo}">`);
+
+                            // show the modal
+                            $("#myModal").modal();
+
+                        });
+
+                }
+                else { // not all questions answered
+
+                    // add title of the error
+                    $(".modal-title").text("Error")
+                    
+                    // show the modal
+                    $("#myModal").modal();
+
                 }
 
 
-                // posts the new entry to the api/friends
-                $.post("/api/friends", newEntry)
-                    .then(function (data) {
-
-                        console.log("data: ", data);
-
-                        // clear the contents of the modal
-                        $(".modal-body").empty();
-
-                        // add the name and image of your match
-                        $(".modal-title").text("We found a match!")
-                        $(".modal-body").append(`<h2>${data.name}</h2>`);
-                        $(".modal-body").append("<br>");
-                        $(".modal-body").append(`<img src="${data.photo}">`);
-
-                        // show the modal
-                        $("#myModal").modal();
-
-                        //alert("Adding results...");
-                    });
             }
 
 
