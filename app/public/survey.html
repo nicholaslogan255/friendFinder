@@ -16,6 +16,26 @@
 
 <body>
 
+
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">We found a match!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="jumbotron">
             <h1>Friend Finder</h1>
@@ -45,12 +65,13 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="image">Image</label>
+                                <label for="image">Image URL</label>
                                 <input type="text" class="form-control" id="image">
                             </div>
 
                             <div class="form-group">
-                                <label for="q1">Question 1? (1- Strongly Disagree | 5 - Strongly Agree):</label>
+                                <label for="q1">Your mind is always buzzing with unexplored ideas and plans. (1- Strongly Disagree | 5 -
+                                    Strongly Agree):</label>
                                 <select class="form-control" id="q1">
                                     <option>1</option>
                                     <option>2</option>
@@ -61,7 +82,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q2">Question 2? (1- Strongly Disagree | 5 - Strongly Agree):</label>
+                                <label for="q2">Generally speaking, you rely more on your experience than your imagination. (1- Strongly
+                                    Disagree | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q2">
                                     <option>1</option>
                                     <option>2</option>
@@ -72,7 +94,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q3">Question 3? (1- Strongly Disagree | 5 - Strongly Agree):</label>
+                                <label for="q3">You find it easy to stay relaxed and focused even when there is some pressure. (1- Strongly
+                                    Disagree | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q3">
                                     <option>1</option>
                                     <option>2</option>
@@ -83,7 +106,9 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q4">Question 4? (1- Strongly Disagree | 5 - Strongly Agree):</label>
+                                <label for="q4">You rarely do something just out of sheer curiosity. (1- Strongly Disagree | 5 - Strongly
+                                    Agree):
+                                </label>
                                 <select class="form-control" id="q4">
                                     <option>1</option>
                                     <option>2</option>
@@ -94,7 +119,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q5">Question 5? (1- Strongly Disagree | 5 - Strongly Agree):</label>
+                                <label for="q5">People can rarely upset you. (1- Strongly Disagree | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q5">
                                     <option>1</option>
                                     <option>2</option>
@@ -105,7 +130,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q6">Question 6? (1- Strongly Disagree | 5 - Strongly Agree):</label>
+                                <label for="q6">It is often difficult for you to relate to other people’s feelings. (1- Strongly Disagree
+                                    | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q6">
                                     <option>1</option>
                                     <option>2</option>
@@ -116,7 +142,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q7">Question 7? (1- Strongly Disagree | 5 - Strongly Agree):</label>
+                                <label for="q7">In a discussion, truth should be more important than people’s sensitivities. (1- Strongly
+                                    Disagree | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q7">
                                     <option>1</option>
                                     <option>2</option>
@@ -128,18 +155,9 @@
 
 
                             <div class="form-group">
-                                <label for="q7">Question 7? (1- Strongly Disagree | 5 - Strongly Agree):</label>
-                                <select class="form-control" id="q7">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="q8">Question 8? (1- Strongly Disagree | 5 - Strongly Agree):</label>
+                                <label for="q8">You rarely get carried away by fantasies and ideas. (1- Strongly Disagree | 5 - Strongly
+                                    Agree):
+                                </label>
                                 <select class="form-control" id="q8">
                                     <option>1</option>
                                     <option>2</option>
@@ -150,7 +168,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="q9">Question 9? (1- Strongly Disagree | 5 - Strongly Agree):</label>
+                                <label for="q9">You think that everyone’s views should be respected regardless of whether they are supported
+                                    by facts or not. (1- Strongly Disagree | 5 - Strongly Agree):</label>
                                 <select class="form-control" id="q9">
                                     <option>1</option>
                                     <option>2</option>
@@ -161,19 +180,16 @@
                             </div>
 
                             <div class="form-group">
-                                    <label for="q10">Question 10? (1- Strongly Disagree | 5 - Strongly Agree):</label>
-                                    <select class="form-control" id="q10">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-
-
-
-
+                                <label for="q10">You feel more energetic after spending time with a group of people.(1- Strongly Disagree
+                                    | 5 - Strongly Agree):</label>
+                                <select class="form-control" id="q10">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
 
                         </form>
                         <br>
@@ -201,14 +217,14 @@
             event.preventDefault();
 
             // check if name and image link are empty
-            if ($("#name").val().trim() == "" || $("#image").val().trim()) {
+            if ($("#name").val().trim() == "" || $("#image").val().trim() == "") {
                 alert("You must enter your name and a link to a picture of you.");
                 // TODO: MODAL
             }
             else {
                 var newEntry = {
                     name: $("#name").val().trim(),
-                    image: $("#image").val().trim(),
+                    photo: $("#image").val().trim(),
                     scores: [
                         $("#q1").val(),
                         $("#q2").val(),
@@ -229,7 +245,19 @@
                     .then(function (data) {
 
                         console.log("data: ", data);
-                        alert("Adding results...");
+
+                        // clear the contents of the modal
+                        $(".modal-body").empty();
+
+                        // add the name and image of your match
+                        $(".modal-body").append(`<h1>${data.name}</h1>`);
+                        $(".modal-body").append("<br>");
+                        $(".modal-body").append(`<img src="${data.photo}">`);
+                    
+                        // show the modal
+                        $("#myModal").modal();
+
+                        //alert("Adding results...");
                     });
             }
 
